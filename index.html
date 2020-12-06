@@ -1,44 +1,66 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  <style>
-      div#back {background: beige;}
-      header#main_title {background: skyblue;}
-      nav#nav {background: pink;}
-      section#main {background: yellow;}
-      footer#footer {background: green;}
-      nav#nav ul {margin:0; padding:0; list-style:none;}
-      nav#nav ul li {background: burlywood; padding:10px; display: inline-block;}
+<head>
+    <link rel="stylesheet" href="git.css">
+    <style> 
 
-  </style>
-  </head>
+        p {margin-right: 15px;
+            margin-left: 15px;
+            margin-bottom: 30px;
+            font-size: 20px;}
+    </style>
+</head>
 
 
 
-  <body>
-    <div id="back"> 
-      <header id = "main_title">
-        <h1> The everything of Lee Gain</h1>
-      </header>
 
-      <nav id="nav">
-        <li><img ""></li>
-        <li>My Profile</li>
-        <li>Git tutorial</li>
-        <li>My project</li>
-        <li>Technology</li>
-        <li>IT work</li>
-      </nav>
+<body>
+<div id="Container">
+  <div id="nav">
+      <ul id="DropboxMenu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="">  My Profile</a>
+              <ul id="sub-menu">
+                  <li><a href="">My profile</a></li>
+                  <li><a href="">Career</a></li>
+                  <li><a href="">Test results</a></li>
+              </ul>
+          </li>
 
-      <section id="main">
-        <p>main</p>
-      </section>
-
-      <footer id="footer">
-        About
-      </footer>
+          <li><a href=""> Git tutorial</a>
+              <ul id="sub-menu">
+                  <li> <a href="Git_Overview.html">overview</a></li>
+                  <li> <a href="Git_Install.html">Install</a></li>
+                  <li> <a href="Git_Basic commands.html">Basic command</a></li>
+                  <li> <a href="Git_Resolve conflicts.html">Resolve conflicts</a></li>
+                  <li> <a href="Git_Branching.html">Branching and Stash</a></li>
+                  <li> <a href="Git_Cheat Sheet.html">Cheat Sheet</a></li>
+              </ul>
+          </li>
+      
+          <li><a href="">My project</a>
+              <ul id="sub-menu">
+                  <li> <a href="">overview</a></li>
+                  <li> <a href="">discription</a></li>
+                  <li> <a href="">tool</a></li>
+              </ul>
+          </li>
+          
+          <li><a href="">Technology</a>
+              <ul id="sub-menu">
+                  <li> <a href="">Chatbot & NLP</a></li>
+                  <li> <a href="">Artificial Intelligence & Machine Learning</a></li>
+              </ul>
+          </li>
+          
+          <li><a href="">IT work</a>
+              <ul id="sub-menu">
+                  <li> <a href="">UI/UX designer</a></li>
+                  <li> <a href="">Software Engineer</a></li>
+                  <li> <a href="">Data analist</a></li>
+              </ul>
+          </li>  
+      </ul>
     </div>
   </body>
 </html>
