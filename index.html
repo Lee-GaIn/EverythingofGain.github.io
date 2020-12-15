@@ -9,30 +9,42 @@
 
     body {
 
-        background-image: url(background.png);
+        background-image: url(image/home/background.png);
         background-repeat: repeat;
     }
 
+    #logo{
+      box-sizing: border-box;
+
+      width: 500px;
+      height: 100px;
+      left:400px;
+      margin-bottom: 100px;
+    }
     div {box-sizing: border-box;
         position: relative;
-        left : 150px;
-        padding-top: 10px;
+        left : 190px;
         width: 1000px;
         height: 100px;}
 
-    .index1 {
+    #main {
         box-sizing: border-box;
         border: solid blue 1px;
+        left : 190px;
+        width: 1000px;
+        height: 500px;
     }
     
     </style>
   </head>
   <body>
-    <DIV>
-        <img src="HP2.png" alt="">
+    <div id="logo">
+      <img src="image/home/logo.png" alt="">
+    </div>
+    <DIV id = "main">
+        <img src="resources/" alt="">
     </DIV>
 
-    <div class = "index1">
 
     </div>
   </body>
