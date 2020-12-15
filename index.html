@@ -5,47 +5,82 @@
     <style>
     
     * {margin:0px;
-    padding: 0px;}
+    padding: 0px;
+	text-align: center;}
 
     body {
 
-        background-image: url(image/home/background.png);
+        background-image: url(image/homepage/background.png);
         background-repeat: repeat;
     }
 
     #logo{
-      box-sizing: border-box;
 
-      width: 500px;
-      height: 100px;
-      left:400px;
-      margin-bottom: 100px;
+	  margin: 100px auto;
+
     }
     div {box-sizing: border-box;
         position: relative;
-        left : 190px;
-        width: 1000px;
-        height: 100px;}
+        margin : 10px auto 30px;}
 
-    #main {
-        box-sizing: border-box;
-        border: solid blue 1px;
-        left : 190px;
-        width: 1000px;
-        height: 500px;
-    }
-    
+	#send {
+		position:absolute;
+		left: 780px;
+		top: 1550px;
+
+
+	}
+
+	
+
+	footer {background-color:#F2E8F7;
+	color : #ffffff;
+	height:400px;
+	width:100%;
+	position: relative;
+	display: inline-block;}
+   
+   --/*
+	.footer_icons {
+	width : 20px;
+	height : 20px;
+	padding: 10px;
+	border : 3px solid red;
+	display: inline-block;
+	
+	}
+
+	.footer_bottom {
+	text-align:center;
+	background-color:#E0D5E8;
+	color : black;
+	height: 50px;
+	width: 100%;
+	position:absolute;
+	bottom:0px;
+	left : 0px;
+	padding-top: 1px;
+	}
+	   */--
+
+
     </style>
   </head>
+
+
   <body>
     <div id="logo">
-      <img src="image/home/logo.png" alt="">
+      <img src="image/homepage/logo.png" alt="logo">
     </div>
-    <DIV id = "main">
-        <img src="resources/" alt="">
-    </DIV>
 
-
+    <div id = "main">
+        <img src="image/homepage/homepage.png" alt="homepage">
+		<div id = "send">
+			<textarea name="message" rows="6" cols="70" placeholder = "Please leave me a message."></textarea>
+			<br>
+			<input type="submit" value="SEND">
+		</div>
     </div>
+
   </body>
 </html>
