@@ -25,13 +25,13 @@ body {font-family: 'Raleway', sans-serif; font-family: 'Roboto', sans-serif;}
     height:50px;
     padding-top: 20px;
 }
-#DropboxMenu > li:hover #sub-menu {opacity: 1; visibility: visible;}
+#DropboxMenu > li:hover #sub_menu {opacity: 1; visibility: visible;}
 /*#DropboxMenu > li:nth-child(1)>a {border-left: 100px solid blueviolet;}*/
 
-#sub-menu {position:absolute; background-color:beige; opacity: 0; visibility: hidden; width:227px;}
-#sub-menu > li {padding: 16px 28px; border-bottom: 1px solid rgba(0, 0, 0, 15);}
-#sub-menu > li > a {color: gray; text-decoration: none; font-size: 20px; }
-#sub-menu > li:hover {background-color: burlywood;}
+#sub_menu {position:absolute; background-color:beige; opacity: 0; visibility: hidden; width:227px;}
+#sub_menu > li {padding: 16px 28px; border-bottom: 1px solid rgba(0, 0, 0, 15);}
+#sub_menu > li > a {color: gray; text-decoration: none; font-size: 20px; }
+#sub_menu > li:hover {background-color: burlywood;}
 
 /*height: 500px; width:125px; padding:20px; top:200px; left: 10px; bottom:auto; width:min-content; height:min-content;*/
 

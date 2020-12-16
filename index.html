@@ -25,8 +25,6 @@
 		position:absolute;
         width : 100%;
 		top: 1550px;
-
-
 	}
 
 	
@@ -68,11 +66,18 @@
 
   <body>
     <div id="logo">
-      <img src="image/home/logo.png" alt="logo">
+      <a href="index.html"><img src="image/home/logo.png" alt="logo"></a>
     </div>
 
     <div id = "main">
-        <img src="image/home/homepage.png" alt="homepage">
+		<img src="image/home/homepage.png" alt="homepage" usemap="#image_nav">
+		<map name="#image_nav">
+			<area target="_self" alt="My Profile" title="My Profile" href="Profile/PersonalInformation.html" coords="99,408,307,468" shape="rect">
+			<area target="_self" alt="Git Hub" title="Git Hub" href="git_tutorial/Git_Overview.html" coords="46,637,250,696" shape="rect">
+			<area target="_self" alt="Project Idea" title="Project Idea" href="IT_project/Project_Overview.html" coords="207,798,405,857" shape="rect">
+			<area target="_self" alt="IT technologies" title="IT technologies" href="IT_technology/tech_index.html" coords="683,365,879,425" shape="rect">
+			<area target="_self" alt="IT work" title="IT work" href="IT_work/work_index.html" coords="778,700,980,758" shape="rect">
+		</map>
 		<div id = "send">
 			<textarea name="message" rows="6" cols="70" placeholder = "Please leave me a message."></textarea>
 			<br>

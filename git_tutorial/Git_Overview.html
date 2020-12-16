@@ -1,82 +1,83 @@
 <!doctype html>
 <html>
-    <head>
-        <link rel="stylesheet" href="git.css">
-        <style>
-            img {width: 270px; height: 100px; margin-left: 10px; margin-right: 50px; padding:0px;border:0px;}
-            #Overview_bookmark {margin-left:220px;}
-            p {padding-top: 100px; margin-left:100px;}
-        </style>
-    </head>
-
-
-
-
-    <body>
+<head>
+    <title>Project_Overview</title>
+    <link rel="stylesheet" href="../content.css">
+    <style>
+        #gitlogo {
+            margin:50px;
+            width: 200px;
+        }
+    </style>
+  </head>
+  <body>
         <div id="Container">
+            <div id="logo">
+                <a href="../index.html"><img src="../image/home/logo.png" alt="logo"></a>
+            </div>
+
             <div id="nav">
                 <ul id="DropboxMenu">
-                    <li><a href="../index.html">HOME</a></li>
-                    <li><a href="">  My Profile</a>
-                        <ul id="sub-menu">
-                            <li><a href="">My profile</a></li>
-                            <li><a href="">Career</a></li>
-                            <li><a href="">Test results</a></li>
+                    <li><a href="">My Profile</a>
+                        <ul id="sub_menu1">
+                          <li><a href="../Profile/PesonalProfile.html">Personal Information</a></li>
+                          <li><a href="../Profile/InterestinIT.html">Interest in IT</a></li>
+                          <li><a href="../Profile/IdealJob.html">Ideal Job</a></li>
+                          <li><a href="../Profile/PesonalProfile.html">Pesonal Profile</a></li>
+                          <li><a href="../Profile/TeamProfile.html">Team Profile</a></li>
+
                         </ul>
                     </li>
 
-                    <li><a href=""> Git tutorial</a>
-                        <ul id="sub-menu">
-                            <li> <a href="Git_Overview.html">overview</a></li>
-                            <li> <a href="Git_Install.html">Install</a></li>
-                            <li> <a href="Git_Basic commands.html">Basic command</a></li>
-                            <li> <a href="Git_Resolve conflicts.html">Resolve conflicts</a></li>
-                            <li> <a href="Git_Branching.html">Branching and Stash</a></li>
- 
+                    <li><a href="../git_tutorial/Git_Overview.html"> Git tutorial</a>
+                        <ul id="sub_menu2">
+                          <li> <a href="../git_tutorial/Git_Overview.html">Overview</a></li>
+                          <li> <a href="../git_tutorial/Git_Install.html">Install</a></li>
+                          <li> <a href="../git_tutorial/Git_Basic%20commands.html">Basic command</a></li>
+                          <li> <a href="../git_tutorial/Git_Resolve%20conflicts.html">Resolve conflicts</a></li>
+                          <li> <a href="../git_tutorial/Git_Branching.html">Branching and Stash</a></li>
                         </ul>
                     </li>
-                
-                    <li><a href="">My project</a>
-                        <ul id="sub-menu">
-                            <li> <a href="">overview</a></li>
-                            <li> <a href="">discription</a></li>
-                            <li> <a href="">tool</a></li>
+
+                    <li><a href="../IT_project/Project_Overview.html">My project</a>
+                        <ul id="sub_menu3">
+                          <li> <a href="../IT_project/Project_Overview.html">Overview</a></li>
+                          <li> <a href="../IT_project/Project_Motivation.html">Motivation</a></li>
+                          <li> <a href="../IT_project/Project_Description.html">Description</a></li>
+                          <li> <a href="../IT_project/Project_ToolsandTechnologies.html">Tools and Technologies</a></li>
+                          <li> <a href="../IT_project/Project_SkillsRequired.html">Skills Required</a></li>
+                          <li> <a href="../IT_project/Project_Outcome.html">Outcome</a></li>
                         </ul>
                     </li>
-                    
+
                     <li><a href="">Technology</a>
-                        <ul id="sub-menu">
-                            <li> <a href="">Chatbot & NLP</a></li>
-                            <li> <a href="">Artificial Intelligence & Machine Learning</a></li>
+                        <ul id="sub_menu4">
+                          <li> <a href="../IT_technology/chatbotNLP.html">Chatbot & NLP</a></li>
+                          <li> <a href="../IT_technology/AI.html">Artificial Intelligence & Machine Learning</a></li>
                         </ul>
                     </li>
-                    
+
                     <li><a href="">IT work</a>
-                        <ul id="sub-menu">
-                            <li> <a href="">UI/UX designer</a></li>
-                            <li> <a href="">Software Engineer</a></li>
-                            <li> <a href="">Data analist</a></li>
+                        <ul id="sub_menu5">
+                          <li> <a href="../IT_work/UXdesigner.html">UX designer</a></li>
+                          <li> <a href="../IT_work/Cybersecurityanalysist.html">Cyber security analyst</a></li>
+                          <li> <a href="../IT_work/DataScientist.html">data scientist</a></li>
+                          <li> <a href="../IT_work/SoftwareEngineer.html">Software Engineer</a></li>
+                          <li> <a href="../IT_work/ITdirector.html">IT director</a></li>
                         </ul>
-                    </li>  
+                    </li>
                 </ul>
             </div>
 
-            <div id="aside">
-                <h2>BookMark</h2>
-                <ol>
-                    <li> <a href="#Overview_bookmark">Overview</a> </li>
 
-                </ol>
-            </div>
-
-            <div id=article>
+            <div class="article">
                 <h2 id="Overview_bookmark">Overview of Git and GitHub</h2>
                 <br>
                 <br>
                 <br>
                 <br>
                 
-                <p><img src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" alt="git logo"  align="left" >
+                <p><img id="gitlogo" src="https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png" alt="git logo"  align="left">
                     <a href="https://github.com/"">Git</a> is an enterprise established in 2008 which provides services for the cooperation of software development by using Git. 
                     The major services of them are hosting others to user's projects and managing versions of software easily. By using Git which is a system to track changes of files, programmers can manage files, track bugs and collaborate without location and time limitation. In other words, they cooperate with various programmers efficiently. 
                     <br>
