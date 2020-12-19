@@ -4,7 +4,7 @@
     text-decoration: none;}
 ul, li {list-style-type: none;}
 body {
-    background-image: url("image\home\background.png");
+    background-image: url("image/home/background.png");
     background-repeat: repeat;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
@@ -26,7 +26,7 @@ a:hover {background: #8bc9c7;
                 position:relative;}
 
 #DropboxMenu > li { float: left;
-                    width: calc(100%\5);
+                    width: calc(100%/5);
                     height:50px;
                     }
 #DropboxMenu > li > a {display: block;
@@ -43,7 +43,7 @@ a:hover {background: #8bc9c7;
                     }
 #DropboxMenu > li:hover [id^='sub_menu'] {opacity: 1;
                                             visibility: visible;
-                                            width:calc(100%\5);
+                                            width:calc(100%/5);
                                             }
 
 
@@ -51,7 +51,7 @@ a:hover {background: #8bc9c7;
                 background-color:#C6B3E3;
                 opacity: 0;
                 visibility: hidden;
-                width:calc(100%\5);}
+                width:calc(100%/5);}
 [id^='sub_menu'] > li {padding: 16px 28px;
                         border-bottom: 2px solid #807287;}
 [id^='sub_menu'] > li > a {color:#38313B;
@@ -62,35 +62,47 @@ a:hover {background: #8bc9c7;
 
 
 
-#aside {
+#aside, #aside_tech {
     position: fixed;
     list-style: none;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-left: 20px;
     margin-bottom:200px;
+    padding-top:20px;
+    padding-bottom:20px;
     background-color:#FAF6DE;
-    border: 10px solid #B09CBA;
-    width:200px;
+    border: 5px solid #B09CBA;
     text-align: left;
     z-index:5;
 }
-#aside > h2 { font-size: 30px;
-            margin-left: 20px;
+#aside {width:200px;}
+#aside_tech {width:250px;}
+
+#aside> h2, #aside_tech >h2 {clear:both;
+            text-align: center;
+            font-size: 30px;
+            border-top: 5px solid darkblue;
             border-bottom: 5px solid orangered;}
-#aside > ol {list-style:none;}
-#aside > ol > li,h2 {clear:both;
-                    float: left;
-                    margin-top: 5px;
-                    margin-left:10px;
-                    font-size: 20px;
-                    text-decoration: none;}
+
+#aside > ol, #aside_tech > ol {list-style:none;  
+            padding-left: 30px;
+            margin-left:10px;
+            margin-right:10px;}
+#aside  > ol > li , #aside_tech > ol > li {float: left;
+                                            margin-top: 10px;
+                                            text-decoration: none;
+                                            list-style-type: square;}
+#aside > ol > li {width:150px; font-size:20px;}
+#aside_tech > ol > li {width:200px; font-size:16px;}
+
+#aside, #aside_tech > #tech_book {font-size: 15px;}
 
 .gallery {max-width:1200px;
         top:50px;
         width:100%;
         margin:220px auto 100px;
         padding:120px;
-        background-image: url("image\article_bg.png");
+        background-image: url("image/article_bg.png");
         background-size: auto;
 }
 .gallery > h2 {font-size: 50px;
@@ -160,14 +172,15 @@ a:hover {background: #8bc9c7;
 
 
 
-.article {  margin-top: 150px;
-            background-image: url("image\article_bg.png");
+.article {  background-image: url("image/article_bg.png");
             background-size: 100%;
             line-height: 200%;
             font-family: 'Times New Roman';
             width:calc(100%-100px);
+            margin-top: 150px;
             margin-left: 100px;
             margin-right: 100px;
+            padding-top:10px;
             }
 .article > h2 , .gallery> h2 {font-size:45px;
                                 font-weight:bold;
@@ -192,8 +205,14 @@ a:hover {background: #8bc9c7;
                 font-family: 'Times New Roman';}
 .article > p > a {text-decoration :underline;}
 
+#get_url {font-size: 18px;
+            color:white;
+            text-align: center;
+            background-color:teal;
+        display: inline-block;}
+
 img {
-    max-width: 500px;
+    max-width: 700px;
     max-height: 500px;
     margin-left:auto;
     margin-right:auto;
