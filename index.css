@@ -1,0 +1,65 @@
+* {margin:0px;
+    padding: 0px;
+	text-align: center;
+    list-style: none;
+    text-decoration: none;}
+
+    body {
+        background-image: url(image/home/background.png);
+        background-repeat: repeat;
+    }
+
+    #logo{
+        width : 100%;
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+
+    #heart {
+            position: absolute;
+            margin-left: 39%;
+            top:900px;
+    }
+    .dislike {
+        background: url("image/home/unfilled_heart.png") no-repeat;
+        width: 30px;
+        height: 30px;
+    }
+
+    .like {
+        background: url("image/home/filled_heart.png") no-repeat;
+        width: 30px;
+        height: 30px;
+    }
+
+    div, #main {box-sizing: border-box;
+        position: relative;}
+
+	#send {
+		position:absolute;
+        width : 100%;
+		top: 1550px;
+	}
+
+    footer {
+        width : 100%;
+        height: 200px;
+        margin-top: 200px;
+        background-color: #9887A1;
+    }
+
+    footer > #footer_logo {
+                    padding-top: 20px;
+                    width:50%;
+                    height:100px;
+                    display: inline-block;
+    }
+    footer > #socialmedia > a {
+                    padding-top:30px;
+                    width:100px;
+                    height:30px;
+                    display: inline-block;
+                    align-items: center;
+
+    }
+
